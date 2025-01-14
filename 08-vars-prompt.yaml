@@ -13,6 +13,6 @@
     private: false
   tasks:
   - name: print the information
-    ansible.n=builtin.debug:
+    ansible.builtin.debug:
       msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"       
 

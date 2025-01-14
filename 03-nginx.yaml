@@ -4,7 +4,7 @@
     - name: install nginx
       ansible.builtin.debug:
       name: nginx
-      state: remove    #present means install,absent means remove
+      state: absent    #present means install,absent means remove
     # - name: start nginx
     #   ansible.builtin.debug:
     #   name: nginx

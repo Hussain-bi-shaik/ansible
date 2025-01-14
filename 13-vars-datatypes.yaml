@@ -5,10 +5,10 @@
     course-name: "devops with aws" #string
     duration: 120hrs
     topics:   #list
-    -linux
-    -shell
-    -ansible
-    -aws
+    - linux
+    - shell
+    - ansible
+    - aws
     live: true  #boolean
     tools: #map
       ci: jenkins
@@ -18,4 +18,3 @@
   - name: print the information
     ansible.builtin.debug:
     MSG: "hello i am learing {{course-name}}, duration is {{duration}},topics are: {{topics}}, is it live {{live}}, tools used: {{tools}}"
-        

@@ -1,12 +1,13 @@
-- name: installing and starting nginx
+- name: installing and nginx
   hosts: web
   tasks:
     - name: install nginx
       ansible.builtin.debug:
       name: nginx
-      state: absent    #present means install,absent means remove
-    # - name: start nginx
-    #   ansible.builtin.debug:
-    #   name: nginx
-    #   state: started
-    #   enabled: yes
+      state: present    #present means install,absent means remove
+    - name: start nginx
+      ansible.builtin.debug:
+      name: nginx
+      state: started
+      enabled: yes
+      

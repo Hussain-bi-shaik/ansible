@@ -10,7 +10,7 @@
     private: false
   - name: TRAINER
     prompt: please enter trainer name
-    provate: false
+    private: false
   tasks:
   - name: print the information
     ansible.n=builtin.debug:

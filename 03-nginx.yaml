@@ -3,11 +3,11 @@
   become: yes # -b giving root access
   tasks:
     - name: install nginx
-      ansible.builtin.debug:
+      ansible.builtin.package:
       name: nginx
       state: present    #present means install,absent means remove
     - name: start the nginx
-      ansible.builtin.debug:
+      ansible.builtin.service:
       name: nginx
       state: started
       enabled: yes

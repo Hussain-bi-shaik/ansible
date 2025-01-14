@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    course-name: "devops with aws" #string
+    course_name: "devops with aws" #string
     duration: 120hrs
     topics:   #list
     - linux

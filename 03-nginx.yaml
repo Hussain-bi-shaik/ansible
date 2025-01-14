@@ -1,11 +1,12 @@
-- name: installing and nginx
+- name: installing and run nginx
   hosts: web
+  become: yes # -b giving root access
   tasks:
     - name: install nginx
       ansible.builtin.debug:
       name: nginx
       state: present    #present means install,absent means remove
-    - name: start nginx
+    - name: start the nginx
       ansible.builtin.debug:
       name: nginx
       state: started

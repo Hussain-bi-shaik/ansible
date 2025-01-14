@@ -4,7 +4,7 @@
   vars_prompt:
   - name: COURSE
     prompt: please enter course name
-    #private: false    #false is to see the indormation which we giving
+    private: false    #false is to see the indormation which we giving
   - name: DURATION
     prompt: please enter duration
     private: false

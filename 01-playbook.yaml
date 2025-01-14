@@ -1,12 +1,5 @@
--name: shabbu
-  email: shabanashaik75@gmail.com
-  addresses: #list
-    -type: perminent address
-      doNO: 15-33
-      street: zenda chettu center
-      City: Nambur
-    -type: temporary address
-      doNO: 111
-      street: gachibowli
-      City: hyd
-
+-name: PING
+  hosts: web
+  tasks:    #task=module=collection
+    -name: ping the server
+      ansible.builtin.ping:

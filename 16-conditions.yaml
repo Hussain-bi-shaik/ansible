@@ -6,11 +6,11 @@
     ansible.builtin.dnf:    # dnf we mentioned as in RHEL we use dnf to install
       name: nginx
       state: installed
-    when: ansible_os_family == "Redhat"  # this this facts information
+    when: ansible_os_family == "RedHat"  # this this facts information
 
   - name: install nginx if ubuntu
     ansible.builtin.apt:    # apt we mentioned as in ubuntu we use apt to install
       name: nginx
       state: installed
-    when: ansible_os_family == "debian"  # this this facts information
+    when: ansible_os_family == "Debian"  # this this facts information
             

@@ -40,5 +40,5 @@
     vars:
       name: "SHABBU shaik"
     ansible.builtin.debug:
-      msg: "this is upper case: {{ name | upper }}"    
+      msg: "this is upper case- {{ name | upper }}"    
 

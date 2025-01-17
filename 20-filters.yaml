@@ -44,7 +44,7 @@
 
   - name: print min and mx
     vars:
-      numbers: [1, 50, 999, 67, 43 ]
+      number: [1, 50, 999, 67, 43 ]
     ansible.builtin.debug:
       msg: "min is {{ number | min}} and max is {{ number | max }}"      
 

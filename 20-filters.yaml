@@ -4,5 +4,5 @@
   become: yes
   tasks:
   - name:handle undefined variable
-    ansible.buitlin.debug:
+    ansible.builtin.debug:
       msg: "hello {{ person | default('ramesh')}}"    #person is a variable

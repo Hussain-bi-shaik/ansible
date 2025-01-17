@@ -5,4 +5,4 @@
   tasks:
   - name:handle undefined variable
     ansible.builtin.debug:
-      msg: "hello {{ person | default('ramesh')}}"    #person is a variable
+      msg: "hello {{ person | default('ramesh') }}"    #person is a variable

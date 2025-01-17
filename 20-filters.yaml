@@ -1,0 +1,8 @@
+- name: filters
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name:handle undefined variable
+    ansible.buitlin.debug:
+      msg: "hello {{ person | default('ramesh')}}"    #person is a variable
